@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Main  {
     public static void main (String[] args) {
         int[] firstArray = getRandomArray(12);
@@ -15,6 +14,14 @@ public class Main  {
             }
         }
 
+    }
+
+    private static int[] getRandomArray(int length) {
+        int[] tempMass = new int[length];
+        Random random = new Random();
+        for(int i =0;i<tempMass.length;i++){
+            tempMass[i] = random.nextInt(30);
+        }
     }
 }
 
